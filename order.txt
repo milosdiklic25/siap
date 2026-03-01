@@ -1,0 +1,8 @@
+1. filter best picture
+2. filter old movies
+3. filter best picture nominees
+3.1 expand movie with winner bool
+4. filter critic reviews
+5. normalize critic reviews
+6. preprocess quotes
+7. generate quote sentiment
