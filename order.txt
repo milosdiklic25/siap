@@ -1,8 +1,15 @@
-1. filter best picture
-2. filter old movies
-3. filter best picture nominees
-3.1 expand movie with winner bool
-4. filter critic reviews
-5. normalize critic reviews
-6. preprocess quotes
-7. generate quote sentiment
+filter best picture
+filter old movies
+filter best picture nominees
+expand movie with winner bool
+filter critic reviews
+normalize critic reviews
+preprocess quotes
+generate quote sentiment
+train oscar smote
+python train_oscar_smote.py \
+   --nominees_csv movies_after_1970_best_picture_nominees_with_winner.csv \
+   --reviews_csv critic_reviews_normalized_textprocessed_sentiment.csv \
+   --split_year 2015 \
+   --model logreg \
+   --smote_k 3
